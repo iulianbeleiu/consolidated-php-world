@@ -2,7 +2,9 @@
 
 namespace App\Database;
 
-class MysqlAdapter
+use App\Contracts\AdapterInterface;
+
+class MysqlAdapter implements AdapterInterface
 {
 
 }
