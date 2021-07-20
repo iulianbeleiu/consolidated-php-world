@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22170c13070abc67fb7782cc402aa5cc",
+    "content-hash": "5228ed41432c23099f09cfd0376ea46c",
     "packages": [],
     "packages-dev": [
         {
@@ -192,16 +192,16 @@
         },
         {
             "name": "phar-io/manifest",
-            "version": "2.0.1",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/manifest.git",
-                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133"
+                "reference": "97803eca37d319dfa7826cc2437fc020857acb53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phar-io/manifest/zipball/85265efd3af7ba3ca4b2a2c34dbfc5788dd29133",
-                "reference": "85265efd3af7ba3ca4b2a2c34dbfc5788dd29133",
+                "url": "https://api.github.com/repos/phar-io/manifest/zipball/97803eca37d319dfa7826cc2437fc020857acb53",
+                "reference": "97803eca37d319dfa7826cc2437fc020857acb53",
                 "shasum": ""
             },
             "require": {
@@ -246,9 +246,9 @@
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
             "support": {
                 "issues": "https://github.com/phar-io/manifest/issues",
-                "source": "https://github.com/phar-io/manifest/tree/master"
+                "source": "https://github.com/phar-io/manifest/tree/2.0.3"
             },
-            "time": "2020-06-27T14:33:11+00:00"
+            "time": "2021-07-20T11:28:43+00:00"
         },
         {
             "name": "phar-io/version",
@@ -2160,10 +2160,12 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=8.0"
+    },
     "platform-dev": [],
     "platform-overrides": {
-        "php": "7.4"
+        "php": "8.0"
     },
     "plugin-api-version": "2.1.0"
 }
