@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use App\Classes\Generators\SendingValueGenerator;
+
+$sendingValueGenerator = new SendingValueGenerator();
+
+$generator = $sendingValueGenerator->getRange(PHP_INT_MAX);
+foreach ($generator as $range) {
+    if ($range === 10000) {
+        $generator->send('stop');
+    }
+
+    echo "Dataset {$range}\n";
+}

@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use App\Classes\Generators\IntGenerator;
+
+$generator = new IntGenerator();
+foreach ($generator->getRange(PHP_INT_MAX) as $range) {
+    echo "Dataset {$range} \n>";
+}
