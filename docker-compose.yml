@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  php-fpm:
+    container_name: php-fpm
+    build:
+      context: ./docker/php-fpm
+    volumes:
+      - .:/var/www:z
+  nginx:
+    container_name: nginx
+    build:
+      context: ./docker/nginx
+    volumes:
+      - ./:/var/www:z
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:z
+      - ./docker/nginx/sites/:/etc/nginx/sites-available:z
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d:z
+      - ./docker/logs:/var/log:z
+    depends_on:
+      - php-fpm
+    ports:
+      - "80:80"
+      - "443:443"
